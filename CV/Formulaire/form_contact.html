@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fomr_contact.css">
+    <link rel="stylesheet" href="form_contact.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
@@ -17,9 +17,58 @@
 
     </div>
 
-    <div class="container">
+    <div class="container lg-5">
 
+        <form action="" name="contact" onsubmit="valider()" method="post">
         
+            <table>
+
+                <tr>
+                    <td><label for="nom">Votre nom* : <span class="required"></span></label></td>
+                    <td><input type="text" name="nom" class="long">
+                        <span class="error" id="erreur_nom"></span>
+                    </td>
+                </tr> 
+                
+                <tr>
+                    <td><label for="prenom">Votre prénom* : <span class="required"></span></label></td>
+                    <td><input type="text" name="prenom" class="long">
+                        <span class="error" id="erreur_prenom"></span>
+                    </td>
+                </tr>    
+
+                <tr>
+                    <td><label for="email">Votre Email* : <span class="required"></span></label></td>
+                    <td><input type="email" name="email" class="long">
+                        <span class="error" id="erreur_mail"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="entreprise">Votre entreprise* : <span class="required"></span></label></td>
+                    <td><input type="text" name="entreprise" class="long">
+                        <span class="error" id="erreur_entr"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="message">Votre message* :</label><br>
+                        <textarea cols="30" rows="5" name="message" id="" class="textarea"></textarea>
+                        <span class="error" id="errormsg"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" class="btn btn-success" value="Valider">
+                        <input type="reset" class="btn btn-danger" value="Annuler">
+                    </td>
+                </tr>
+
+            </table>
+        
+        </form>
 
     </div>
 
