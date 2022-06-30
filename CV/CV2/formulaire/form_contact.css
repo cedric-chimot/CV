@@ -1,5 +1,12 @@
+.container {
+    background-color: lightblue;
+    border: 2px solid black;
+    width: 150px;
+}
+
 h1 {
     text-align: center;
+    text-decoration: underline;
 }
 
 .form_style {
@@ -30,3 +37,4 @@ h1 {
 .mention {
     color: red;
 }
+
