@@ -47,6 +47,6 @@ function valider()
         alert("Écrivez un commentaire."); 
         message.focus(); 
         return false; 
-    } 
-    return true; 
+    }
+
 }
