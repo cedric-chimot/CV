@@ -1,9 +1,9 @@
 .block
 	{
-		display: flex;
-		flex: 1;
+		/*display: flex;
+		flex: 1;*/
 		width: auto;
-		justify-content: space-around;
+		/*justify-content: space-around;*/
 		text-align: justify;
 		min-height: 680px;
 	}
