@@ -15,12 +15,17 @@
 	text-align: justify;
 }
 
-.navbar-nav {
-	margin-left: 560px;
+#navbarCollapse {
+	margin-left: 510px;
 	overflow: hidden;
 	position: fixed;
+	/*display: inline-block;*/
 }
 
 .presentation {
 	text-align: justify;
+}
+
+.row1 {
+	margin-top: 22px;
 }
