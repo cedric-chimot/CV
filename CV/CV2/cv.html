@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>CV</title>
@@ -13,29 +14,36 @@
 
 <body>
 
-    <div class="container col-12">
-        
-        <div class="nav">
-            <div id="identité">
-                <h1>Cédric Chimot</h1>
-            </div>
+    <!--div class="container">
+  
+        <div id="identité">
+            <h1>Cédric Chimot</h1>
+        </div>
 
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="#identité" class="nav-link">Présentation</a>
-                        <a href="#experience" class="nav-link">Expérience</a>
-                        <a href="#competences" class="nav-link">Compétences</a>
-                        <a href="#formation" class="nav-link">Formation</a>
-                        <form action="formulaire/form_contact.html" target="_blank">
-                            <button class="btn btn-success">Me contacter</button>
-                        </form>
-                    </div>
-                </div>
+        <div class="row fixed-top">
+            <nav class="col-md-12 navbar justify-content-end">
+                <ul class="nav nav-tabs ">
+                    <li><a href="#identité" class="nav-link">Présentation</a></li>
+                    <li><a href="#experience" class="nav-link">Expérience</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#formation" class="nav-link">Formation</a></li>
+                    <li><form action="formulaire/form_contact.html" target="_blank">
+                        <button class="btn btn-success">Me contacter</button>
+                    </form></li>
+                </ul>
             </nav>
         </div><br>
 
-        <div class="coordonnées">
+        <div id="presentation" class="col-12 col-lg-8 mt-4 p-4">
+            <h2>Développeur Web</h2>
+            <p><i>Actuellement en formation afin d'obternir le titre professionnel Déveleppeur Web/Web mobile, je
+                possède un bon sens de l'organisation et suis autonome dans mes tâches. Calme et discret, je saurai
+                me concentrer sur mes activités. Titulaire du permis B, je saurai me rendre disponible pour un
+                entretien.</i></p>
+            
+        </div>
+
+        <div class="coordonnées mt-4">
             <h3>Mes coordonnées :</h3>
             <p>9 rue des Rochettes<br>
                 02830 Saint Michel<br>
@@ -45,14 +53,7 @@
                 <a href="mailto:cedric_om10@yahoo.fr">cedric_om10@yahoo.fr</a><br><br>
         </div>
 
-        <div id="presentation" class="col-12 col-lg-8 mt-4">
-            <h2>Développeur Web</h2>
-            <p><i>Actuellement en formation afin d'obternir le titre professionnel Déveleppeur Web/Web mobile, je
-                possède un bon sens de l'organisation et suis autonome dans mes tâches. Calme et discret, je saurai
-                me concentrer sur mes activités. Titulaire du permis B, je saurai me rendre disponible pour un
-                entretien.</i></p>
-            
-        </div>
+        
 
         <div id="experience" class="col-12 mt-5">
             <h2>Mon expérience</h2>
@@ -151,6 +152,83 @@
             <h5>2004</h5>
         </div>
 
+    </div-->
+    <div class="container">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-offset-1">
+                        <h1>CHIMOT Cédric</h1><br>
+                        <h2>Développeur Web</h2><br>
+                    </div>
+                </div>
+                <div class="row col-md-10">
+                    <nav class="col-md-12 navbar justify-content-center">
+                        <ul class="nav nav-tabs ">
+                            <li><a href="#experience" class="nav-link">Expérience</a></li>
+                            <li><a href="#competences" class="nav-link">Compétences</a></li>
+                            <li><a href="#formation" class="nav-link">Formation</a></li>
+                            <li>
+                                <form action="formulaire/form_contact.html" target="_blank">
+                                    <button class="btn btn-success">Me contacter</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><br>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row col-md-7">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>Présentation :</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div id="presentation" class="col-12 col-lg-8 mt-4 p-4">
+                    <p><i>Actuellement en formation afin d'obternir le titre professionnel Déveleppeur Web/Web mobile,
+                            je
+                            possède un bon sens de l'organisation et suis autonome dans mes tâches. Calme et discret, je
+                            saurai
+                            me concentrer sur mes activités. Titulaire du permis B, je saurai me rendre disponible pour
+                            un
+                            entretien.</i></p>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="coordonnees">
+                            <h2>Contact :</h2>
+                            <div class="coordonnées mt-4">
+                                <h3>Mes coordonnées :</h3><br>
+                                <p>9 rue des Rochettes<br>
+                                    02830 Saint Michel<br>
+                                    40 ans<br />
+                                    06/19/92/20/66<br>
+                                    03/23/97/40/82<br>
+                                    <a href="mailto:cedric_om10@yahoo.fr">cedric_om10@yahoo.fr</a><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+            <div class="row col-md-10">
+                <nav class="col-md-12 navbar justify-content-center">
+                    <ul class="nav nav-tabs ">
+                        <a href="#" class="nav-link">Informations</a>
+                        <a href="#" class="nav-link">Mentions Légales</a>
+                    </ul>
+                </nav>
+            </div>
+
+        </footer>
     </div>
 
     <script src="cv.js"></script>
@@ -162,6 +240,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
 
 </body>
 
