@@ -15,7 +15,7 @@ button {
     padding: 10px;
     float: left;
     text-align: center;
-    background-color: rgba(26, 190, 163, 0.753);
+    background-color: rgba(26, 124, 190, 0.637);
     color: white;
     border-radius: 5px;
 }
@@ -25,11 +25,9 @@ button {
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid-template-areas: "nav nav nav nav"
-                         "sidebar main main main"
+    grid-template-areas: "nav nav main reseaux"
                          "sidebar contenu1 contenu2 contenu3"
-                         "sidebar footer footer footer"
-                         /*"footer footer footer footer"*/;
+                         "sidebar contenu1 contenu2 contenu3";
     grid-gap: 0.2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
@@ -38,10 +36,10 @@ button {
     text-align: center;
 }
 
-main {
+/*main {
     display: grid;
-    height: 30vh;
-}
+    height: 32vh;
+}*/
 
 nav {
     background: rgba(26, 165, 190, 0.753);
@@ -52,7 +50,7 @@ nav {
 }
 
 main {
-    background: rgba(20, 74, 175, 0.664);
+    background: rgba(101, 28, 184, 0.664);
     grid-area: main;
     /*border-radius: var(--main-radius)*/;
     padding: 10px;
@@ -60,18 +58,18 @@ main {
 }
 
 #sidebar {
-    background: rgba(16, 127, 155, 0.699);
+    background: rgba(16, 81, 155, 0.699);
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding: 10px;
     text-align: left;
-    height: 120vh;
+    height: 87vh;
 }
 
 #contenu1 {
     display: grid;
     height: 89.5vh;
-    background: rgba(11, 93, 185, 0.699);
+    background: rgba(10, 44, 196, 0.699);
     grid-area: contenu1;
     border-radius: var(--main-radius);
     /*padding-top: var(--main-padding);*/
@@ -82,7 +80,7 @@ main {
 #contenu2 {
     display: grid;
     height: 89.5vh;
-    background: rgba(16, 155, 58, 0.76);
+    background: rgba(16, 155, 113, 0.678);
     grid-area: contenu2;
     border-radius: var(--main-radius);
     /*padding-top: var(--main-padding);*/
@@ -101,9 +99,9 @@ main {
     padding-left: 5px;
 }
 
-footer {
-    background: rgba(16, 81, 155, 0.699);
-    grid-area: footer;
+#reseaux {
+    background: rgba(111, 16, 155, 0.527);
+    grid-area: reseaux;
     border-radius: var(--main-radius);
     /*padding-top: var(--main-padding);*/
 }
@@ -119,5 +117,6 @@ footer {
             "contenu1"
             "contenu2"
             "contenu3"
+            "reseaux"
     }
 }
