@@ -13,10 +13,21 @@ h3 {
 
 button {
     padding: 10px;
-    float: left;
+    /*float: left;*/
     text-align: center;
-    background-color: rgba(190, 187, 26, 0.986);
+    background-color: rgba(128, 195, 240, 0.747);
+    box-shadow: 5px 5px 10px black;
     border-radius: 5px;
+    display: inline-block;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    font-size: 20px;
+}
+
+button:hover {
+    transition: ease-in-out 1s;
+	transform: translate(15px,0px);
+    background-color: rgba(128, 135, 240, 0.534);
 }
 
 .container {
@@ -35,7 +46,7 @@ button {
 }
 
 nav {
-    background: rgba(26, 165, 190, 0.753);
+    background: rgba(29, 26, 190, 0.959);
     grid-area: nav;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -93,13 +104,15 @@ main {
 }
 
 #reseaux {
-    background: rgba(111, 16, 155, 0.527);
+    background: rgba(155, 16, 132, 0.363);
     grid-area: reseaux;
     border-radius: var(--main-radius);
     /*padding-top: var(--main-padding);*/
+    text-align: justify;
+    padding-left: 5px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 830px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
@@ -111,5 +124,6 @@ main {
             "contenu2"
             "contenu3"
             "reseaux"
+            
     }
 }
